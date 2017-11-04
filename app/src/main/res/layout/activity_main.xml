@@ -23,7 +23,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No implementado"
+        android:text="Collapsing ToolBar"
+        android:onClick="launchCollapsingToolBarActivity"
         android:layout_gravity="center_horizontal" />
 
     <Button

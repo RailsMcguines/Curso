@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.maxi.android.curso.activity.CollapsingToolBarActivity;
 import com.maxi.android.curso.activity.LineraLayoutActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchLinearLayoutActivity(View view){
         Intent intent = new Intent(this, LineraLayoutActivity.class);
+        startActivity(intent);
+    }
+
+    public void launchCollapsingToolBarActivity(View view){
+        Intent intent = new Intent(this, CollapsingToolBarActivity.class);
         startActivity(intent);
     }
 }
