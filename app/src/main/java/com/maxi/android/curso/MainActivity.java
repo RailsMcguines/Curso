@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CollapsingToolBarActivity.class);
         startActivity(intent);
     }
+
+    public void launchToast(View view){
+        Intent intent = new Intent(this, CollapsingToolBarActivity.class);
+        startActivity(intent);
+    }
 }
