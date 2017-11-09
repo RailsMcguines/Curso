@@ -3,6 +3,9 @@ package com.maxi.android.curso;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -57,5 +60,32 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchToast(View view){
         Toast.makeText(this, "Esto es un Toast", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+
+        switch (itemId) {
+            case R.id.info_details:
+                Toast.makeText(this, "Info pressed", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.search:
+                Toast.makeText(this, "Search pressed", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.add:
+                Toast.makeText(this, "Add pressed", Toast.LENGTH_LONG).show();
+                break;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+        return true;
     }
 }

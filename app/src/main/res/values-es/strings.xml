@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="info_details">Informacion</string>
+    <string name="search">Buscar</string>
+    <string name="add">Agregar</string>
+</resources>
