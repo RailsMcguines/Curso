@@ -12,10 +12,11 @@ import android.widget.Toast;
 
 import com.maxi.android.curso.activity.CollapsingToolBarActivity;
 import com.maxi.android.curso.activity.LineraLayoutActivity;
+import com.maxi.android.curso.activity.SimpleListViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1, btn2;
+    private Button btn1, btn2, btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn1 = (Button) findViewById(R.id.button1);
         btn2 = (Button) findViewById(R.id.button2);
+        btn3 = (Button) findViewById(R.id.button3);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
                 launchCollapsingToolBarActivity(v);
             }
         });
+
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launchSimpleListViewActivity(v);
+            }
+        });
     }
 
     public void launchLinearLayoutActivity(View view){
@@ -55,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchCollapsingToolBarActivity(View view){
         Intent intent = new Intent(this, CollapsingToolBarActivity.class);
+        startActivity(intent);
+    }
+
+    public void launchSimpleListViewActivity(View view){
+        Intent intent = new Intent(this, SimpleListViewActivity.class);
         startActivity(intent);
     }
 
