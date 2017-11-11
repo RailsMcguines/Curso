@@ -36,7 +36,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="No implementado"
+        android:text="Custom Listview"
+        android:id="@+id/button4"
         android:layout_gravity="center_horizontal" />
 
     <Button
