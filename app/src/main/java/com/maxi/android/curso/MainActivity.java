@@ -13,11 +13,12 @@ import android.widget.Toast;
 import com.maxi.android.curso.activity.CollapsingToolBarActivity;
 import com.maxi.android.curso.activity.CustomListViewActivity;
 import com.maxi.android.curso.activity.LineraLayoutActivity;
+import com.maxi.android.curso.activity.ListActivity;
 import com.maxi.android.curso.activity.SimpleListViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btn1, btn2, btn3, btn4;
+    private Button btn1, btn2, btn3, btn4, btn5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btn2 = (Button) findViewById(R.id.button2);
         btn3 = (Button) findViewById(R.id.button3);
         btn4 = (Button) findViewById(R.id.button4);
+        btn5 = (Button) findViewById(R.id.button5);
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
                 launchCustomListViewActivity(v);
             }
         });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launchListActivity(v);
+            }
+        });
     }
 
     public void launchLinearLayoutActivity(View view){
@@ -83,6 +92,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void launchCustomListViewActivity(View view){
         Intent intent = new Intent(this, CustomListViewActivity.class);
+        startActivity(intent);
+    }
+
+    public void launchListActivity(View view){
+        Intent intent = new Intent(this, ListActivity.class);
         startActivity(intent);
     }
 

@@ -39,12 +39,27 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.maxi.android.curso.MainActivity" />
         </activity>
-        <activity android:name=".activity.CustomListViewActivity"
+        <activity
+            android:name=".activity.CustomListViewActivity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.maxi.android.curso.MainActivity" />
+        </activity>
+        <activity android:name=".activity.ListActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.maxi.android.curso.MainActivity" />
+        </activity>
+        <activity android:name=".activity.DetalleActivity"
+            android:parentActivityName=".activity.ListActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.maxi.android.curso.activity.ListActivity" />
         </activity>
     </application>
 

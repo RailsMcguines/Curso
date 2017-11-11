@@ -1,9 +1,10 @@
 package com.maxi.android.curso.entity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Icono {
+public class Icono implements Serializable{
 
     private String nobmre;
     private String xml;
