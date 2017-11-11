@@ -1,4 +1,4 @@
-package com.maxi.android.curso.Adapter;
+package com.maxi.android.curso.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.maxi.android.curso.Entity.Icono;
+import com.maxi.android.curso.entity.Icono;
 import com.maxi.android.curso.R;
 
 import java.util.List;

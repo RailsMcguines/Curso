@@ -1,4 +1,4 @@
-package com.maxi.android.curso.Entity;
+package com.maxi.android.curso.entity;
 
 import java.util.ArrayList;
 import java.util.List;

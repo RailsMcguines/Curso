@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.maxi.android.curso.Adapter.CustomListViewAdapter;
-import com.maxi.android.curso.Entity.Icono;
+import com.maxi.android.curso.adapter.CustomListViewAdapter;
+import com.maxi.android.curso.entity.Icono;
 import com.maxi.android.curso.R;
 
 public class CustomListViewActivity extends AppCompatActivity {
